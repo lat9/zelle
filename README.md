@@ -1,2 +1,2 @@
 # zelle
-A Zelle payment module for Zen Cart
+A Zelle&reg; payment module for Zen Cart
