@@ -44,7 +44,7 @@ class zelle extends base
         }
 
         $this->email_footer = sprintf(MODULE_PAYMENT_ZELLE_TEXT_EMAIL_FOOTER, MODULE_PAYMENT_ZELLE_PAYTO);
-        
+
         $this->zone = (int)MODULE_PAYMENT_ZELLE_ZONE;
     }
 
@@ -81,9 +81,17 @@ class zelle extends base
 
     public function selection()
     {
+        global $template, $current_page_base;
+
+        $icon = $template->get_template_dir('zelle.png', DIR_WS_TEMPLATE, $current_page_base, 'images/icons') . '/zelle.png';
+        if (!is_file($icon)) {
+            $icon = '';
+        } else {
+            $icon = zen_image($icon, $this->title) . '&nbsp;';
+        }
         return [
             'id' => $this->code,
-            'module' => $this->title,
+            'module' => $icon . $this->title,
         ];
     }
 
