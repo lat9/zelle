@@ -13,6 +13,6 @@ $define = [
     // -----
     // The '%s' will be filled in with the store-specific payment ID.
     //
-    'MODULE_PAYMENT_ZELLE_TEXT_EMAIL_FOOTER', "Use your Zelle&reg; app to make a payment to %s. Please include your order-number in the payment comments.\n\nYour order will ship after we receive payment.",
+    'MODULE_PAYMENT_ZELLE_TEXT_EMAIL_FOOTER' => "Use your Zelle&reg; app to make a payment to %s. Please include your order-number in the payment comments.\n\nYour order will ship after we receive payment.",
 ];
 return $define;
