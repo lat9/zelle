@@ -15,12 +15,14 @@ ol li, ul li { margin-left: 0; }
 ol li ul li, ul li ul li, ol li ol li { margin: 0 auto 5px; }
 pre { padding-left: 40px; }
 .corefile { color: red; }
+.removed { text-decoration: line-through; }
+.added { color: #1f45fc; }
 </style>
 </head>
 
 <body>
 <h1>Zelle&reg; Payments for Zen Cart</h1>
-<h3>Version 1.1.0</h3>
+<h3>Version 2.0.0</h3>
 <p>Current Support Thread at Zen Cart Forums: <a href="https://www.zen-cart.com/showthread.php?227626-Zelle-Payments-Support-Thread" target="_blank">https://www.zen-cart.com/showthread.php?227626-Zelle-Payments-Support-Thread</a>.</p>
 
 <h2>What it does</h2>
@@ -28,6 +30,9 @@ pre { padding-left: 40px; }
 
 <h2>Version History:</h2>
 <ul>
+    <li>v2.0.0, 20240825 (lat9)<ul>
+        <li>CHANGE: Drop support for Zen Cart versions prior to 1.5.8; removing <code>zelle.php</code> language file and adding <code>lang.zelle.php</code> as required by zc210.</li>
+    </ul></li>
     <li>v1.1.0, 20230119 (lat9)<ul>
         <li>BUGFIX: Refactoring and PHP 8.2 support &mdash; pre-declaring all class variables.</li>
         <li>CHANGE: Add Zelle&reg; icon to the checkout-payment display.</li>
